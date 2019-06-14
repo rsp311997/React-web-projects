@@ -1,12 +1,4 @@
 # Steps to Setup ReactApp Environment
-<<<<<<< HEAD
-
-## 1. To SettingUp Enviroment for react. (we have to download two tools)
-=======
-##1. To SettingUp Enviroment for react. (we have to download two tools)
-###>1.1. download Nodejs of version (10.16.0LTS)
-###>>1.1.1. use this link for (windows / MacOs) : https://nodejs.org/en/
->>>>>>> 9b26fd68cdb45315eaffc09b75ee64d65f6352ce
 
 > ### 1.1. download Nodejs of version (10.16.0LTS)
 
