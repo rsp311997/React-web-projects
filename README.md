@@ -206,7 +206,7 @@
 
 > ## 5.3 Install webpack localy
 
-	yarn add webpack@3.1.0
+	yarn add webpack@4.33.0
 
 > ## 5.4 Add webpack command into the package.js sctipts object
 
@@ -262,13 +262,13 @@
 				        path: path.join(__dirname,'public'),
 				        filename: 'bundle.js'
 				    },
-	+			    module: {
-	+			        rules: [{
-	+			            loader: 'babel-loader',
-	+			            test: /\.js$/,
-	+			            exclude:/node_modules/
-	+			        }]
-	+			    }
+	->			    module: {
+	->			        rules: [{
+	->			            loader: 'babel-loader',
+	->			            test: /\.js$/,
+	->			            exclude:/node_modules/
+	->			        }]
+	->			    }
 			};
 
 
@@ -294,7 +294,7 @@
 
 > ## 6.1 Install development server.
 
-	yarn add webpack-dev-server@2.5.1
+	yarn add webpack-dev-server@3.7.1
 
 > ## 6.2 Configure development server in webpack.config.js file.
 
@@ -317,9 +317,9 @@
 		            exclude:/node_modules/
 		        }]
 		    },
-+			devServer{
-+				contentBase:path.join(__dirname,'public')
-+			}
+->			devServer{
+->				contentBase:path.join(__dirname,'public')
+->			}
 	};
 
 > ## 6.3 Add a script to run dev server in package.json file.
@@ -335,8 +335,8 @@
 	  "license": "MIT",
 	  "private": true,
 	  "scripts": {
-+	    "build": "webpack",
-+		"dev-server": "webpack-dev-server"
+->	    "build": "webpack",
+->		"dev-server": "webpack-dev-server"
 	  },
 	  "dependencies": {
 	    "babel-cli": "6.24.1",
@@ -377,14 +377,14 @@
 				            test: /\.js$/,
 				            exclude:/node_modules/
 				        },
-+						{
-+							test:/\.s?css/,
-+							use:[
-+								'style-loader',
-+								'css-loader',
-+								'sass-loader'
-+							]
-+						}
+->						{
+->							test:/\.s?css/,
+->							use:[
+->								'style-loader',
+->								'css-loader',
+->								'sass-loader'
+->							]
+->						}
 					  ]
 				    },
 					devServer:{

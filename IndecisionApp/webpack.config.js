@@ -1,6 +1,7 @@
 const path = require('path');
 
 		module.exports = {
+				mode:"development",
 			    entry: './src/app.js',
 			    output: {
 			        path: path.join(__dirname,'public'),
@@ -21,6 +22,8 @@ const path = require('path');
 					}]
 			    },
 				devServer:{
-					contentBase:path.join(__dirname,'public')
+					contentBase:path.join(__dirname,'public'),
+					compress: true,
+    				port: 9000
 				}
 		};
