@@ -317,9 +317,9 @@
 		            exclude:/node_modules/
 		        }]
 		    },
-->			devServer{
-->				contentBase:path.join(__dirname,'public')
-->			}
+ ->			devServer{
+ ->				contentBase:path.join(__dirname,'public')
+ ->			}
 	};
 
 > ## 6.3 Add a script to run dev server in package.json file.
@@ -335,8 +335,8 @@
 	  "license": "MIT",
 	  "private": true,
 	  "scripts": {
-->	    "build": "webpack",
-->		"dev-server": "webpack-dev-server"
+ ->	    "build": "webpack",
+ ->		"dev-server": "webpack-dev-server"
 	  },
 	  "dependencies": {
 	    "babel-cli": "6.24.1",
@@ -377,14 +377,14 @@
 				            test: /\.js$/,
 				            exclude:/node_modules/
 				        },
-->						{
-->							test:/\.s?css/,
-->							use:[
-->								'style-loader',
-->								'css-loader',
-->								'sass-loader'
-->							]
-->						}
+	->						{
+	->							test:/\.s?css/,
+	->							use:[
+	->								'style-loader',
+	->								'css-loader',
+	->								'sass-loader'
+	->							]
+	->						}
 					  ]
 				    },
 					devServer:{
