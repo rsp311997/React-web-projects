@@ -335,8 +335,8 @@
 	  "license": "MIT",
 	  "private": true,
 	  "scripts": {
- ->	    "build": "webpack",
- ->		"dev-server": "webpack-dev-server"
+  	    "build": "webpack",						<-
+  		"dev-server": "webpack-dev-server"		<-
 	  },
 	  "dependencies": {
 	    "babel-cli": "6.24.1",
