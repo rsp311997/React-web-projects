@@ -1,10 +1,12 @@
+/* Import React Preset Components*/
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-console.log("react is working");
+/* Import Custome Component*/
+import IndecisionApp from './components/IndecisionApp.js'
 
-var template = <p>this is the first jsx</p>;
-
+/* Getting the element having id "root" in index.html*/
 var approot = document.getElementById('root');
 
-ReactDOM.render(template,approot);
+/* Rendering IndecisionApp in index.html at approot element using "root" id*/
+ReactDOM.render(<IndecisionApp />,approot);
