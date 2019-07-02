@@ -1,0 +1,93 @@
+body{
+	color:red;
+	background-color: #42454a;
+}
+/*-----------------------------header-----------------------------*/
+.header{
+	background-color: #2e3033;
+	color:white;
+	padding:10px;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.header .brand-name{
+	font-size: 4rem;
+	padding:0;
+	margin-bottom:1rem;
+}
+
+.header .subtitle{
+	font-size: 1rem;
+	padding:0;
+}
+/*-----------------------------header-----------------------------*/
+
+
+/*-----------------------------action-----------------------------*/
+.action{
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.action .action-button{
+	background-color: #7c298c;
+	border-color:#702280;
+	color:white;
+	font-size: 300%;
+	padding:3% 15%;
+}
+
+.action .action-button:hover{
+	box-shadow: 0 0 2px 4px rgba(255,255,255, 0.2);
+}
+/*-----------------------------action-----------------------------*/
+
+/*-----------------------------options-----------------------------*/
+.options{
+	text-align: center;
+	margin-top: .2rem;
+}
+
+.options .header{
+	border:2px solid rgba(255,255,255, 0.2);
+	margin: 0 17%;
+}
+
+.options .header h3{
+	float:left;
+	padding:1rem;
+	margin: 0;
+}
+
+.options .header button{
+	background-color: #7c298c;
+	border:#702280;
+	color: white;
+	float: right;
+	font-size: 1.5rem;
+	margin:0;
+	padding:1rem 2rem;
+}
+
+.options .item{
+	margin: 0 16%;
+	padding:2rem;
+	border: 2px solid rgba(255,255,255, 0.2);
+}
+
+.options .item .item-text{
+	color:white;
+	text-align: left;
+	font-size: 2rem;
+}
+
+.options .item .remove-item button{
+	background-color: #42454a;
+	border:none;
+	color:white;
+	float: right;
+	font-size:1.5rem;
+}
+
+/*-----------------------------options-----------------------------*/

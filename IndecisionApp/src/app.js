@@ -2,6 +2,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+/*reset browsers css*/
+import 'normalize.css/normalize.css';
+
+import './style.css';
+
 /* Import Custome Component*/
 import IndecisionApp from './components/IndecisionApp.js'
 
