@@ -394,11 +394,119 @@
 
 
 --------
+# 8. Setting up React-Router
+	
+	yarn add react-router-dom@5.0.1
 
-# 8. Command to run dev-server
+
+> > ## 8.1 update webpack.config.js file.
+	
+	webpack.config.js
+	----------------------
+	const path = require('path');
+
+			module.exports = {
+				    entry: './src/app.js',
+				    output: {
+				        path: path.join(__dirname,'public'),
+				        filename: 'bundle.js'
+				    },
+				    module: {
+				        rules: [{
+				            loader: 'babel-loader',
+				            test: /\.js$/,
+				            exclude:/node_modules/
+				        },
+							{
+								test:/\.s?css/,
+								use:[
+									'style-loader',
+									'css-loader',
+									'sass-loader'
+								]
+							}
+					  ]
+				    },
+					devServer:{
+						contentBase:path.join(__dirname,'public'),
+			->			historyApiFullback:true
+					}
+			};
+
+
+
+	
+
+# 9. Setting up React-Redux
+
+	yarn add react-redux
+
+# 10 Add a plugin to .babelrc file for spread object operator
+
+	yarn add babel-plugin-transform-object-rest-spread
+
+> > ## 10.1 Update .babelrc file
+	
+	.babelrc
+	------------------------------
+		{
+   			"presets":[
+				"env",
+				"react"
+->    			],
+->    			"plugins":[
+->   				 "transform-object-rest-spread"
+->    			]
+		}
+
+
+# 11. Configure webpack for production
+
+	package.js
+	------------------------------
+	{
+	  "name": "ReactProductionPackage",
+	  "version": "1.0.0",
+	  "main": "index.js",
+	  "author": "rahul panwar",
+	  "license": "MIT",
+	  "private": true,
+	  "scripts": {
+	    "build:dev": "webpack",
+->	    "build:prod": "webpack -p --env -production",
+	    "dev-server": "webpack-dev-server"
+	  },
+	  "dependencies": {
+	    "babel-core": "6.24.1",
+	    "babel-loader": "7.1.1",
+	    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+	    "babel-preset-env": "1.5.2",
+	    "babel-preset-react": "6.24.1",
+	    "css-loader": "0.28.4",
+	    "node-sass": "4.5.3",
+	    "react": "16.8.6",
+	    "react-dom": "16.8.6",
+	    "react-redux": "^7.1.0",
+	    "react-router-dom": "5.0.1",
+	    "sass-loader": "6.0.6",
+	    "style-loader": "0.18.2",
+	    "webpack-dev-server": "3.7.1"
+	  }
+	}
+
+	webpack.config.js
+	---------------------------------------
+	Note: Instead of export object we have to return function
+
+	
+
+# 12. Command to run dev-server
 
 		yarn run dev-server
 
-# 9. Command to build bundle.js
+# 13. Command to build bundle.js
 
 		yarn run build
+
+
+
