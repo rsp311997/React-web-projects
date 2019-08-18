@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+			<html lang="en" dir="ltr">
+				<head>
+				        <meta charset="utf-8">
+
+				        <title>Welcome To Reservoir</title>
+
+						<link rel = "icon" href =  "./images/section1-background.jpg" type = "image/x-icon">
+
+						<!---style link-->
+						<link rel="stylesheet" type="text/css" href="./style.css" />
+
+
+						<!--Bootstrap Links -->
+						<link rel="stylesheet" href="./assets/bootstrap/dist/css/bootstrap-grid.css" />
+						<link rel="stylesheet" href="./assets/bootstrap/dist/css/bootstrap-reboot.css" />
+						<link rel="stylesheet" href="./assets/bootstrap/dist/css/bootstrap.css" />
+
+
+						<!--leaflet css-->
+						<link rel="stylesheet" href="./assets/leaflet/leaflet.css" />
+						<!--leaflet js-->
+						<script href="./assets/leaflet/leaflet.js"></script>
+						<!--esri plugin-->
+
+						<!-- Load Leaflet from CDN -->
+					    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+					    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+					    crossorigin=""/>
+					    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+					    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+					    crossorigin=""></script>
+
+
+					    <!-- Load Esri Leaflet from CDN -->
+					    <script src="https://unpkg.com/esri-leaflet@2.2.4/dist/esri-leaflet.js"
+					    integrity="sha512-tyPum7h2h36X52O2gz+Pe8z/3l+Y9S1yEUscbVs5r5aEY5dFmP1WWRY/WLLElnFHa+k1JBQZSCDGwEAnm2IxAQ=="
+					    crossorigin=""></script>
+
+
+					  <!-- Load Esri Leaflet Geocoder from CDN -->
+					  <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.2.14/dist/esri-leaflet-geocoder.css"
+					    integrity="sha512-v5YmWLm8KqAAmg5808pETiccEohtt8rPVMGQ1jA6jqkWVydV5Cuz3nJ9fQ7ittSxvuqsvI9RSGfVoKPaAJZ/AQ=="
+					    crossorigin="">
+					  <script src="https://unpkg.com/esri-leaflet-geocoder@2.2.14/dist/esri-leaflet-geocoder.js"
+					    integrity="sha512-uK5jVwR81KVTGe8KpJa1QIN4n60TsSV8+DPbL5wWlYQvb0/nYNgSOg9dZG6ViQhwx/gaMszuWllTemL+K+IXjg=="
+					    crossorigin=""></script>
+
+						<!--jquery cdn for popover-->
+						<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+						<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+						<!-- Bootstrap scripts from here-->
+						<script href="./assets/bootstrap/dist/js/bootstrap.bundle.js"></script>
+						<script href="./assets/bootstrap/dist/js/bootstrap.js"></script>
+
+				   </head>
+
+			       <body>
+
+
+			            <!--- rendering from here-->
+			            <div id="root"></div>
+
+
+
+						<!--jquery support-->
+						<script>
+						$(document).ready(function () {
+  							$('[data-toggle="tooltip"]').tooltip('show');
+						});
+						$(document).ready(function(){
+							$('#ServicePageModal').modal('show');
+						})
+						</script>
+
+
+						<!--- scripting from here-->
+					    <script src="/bundle.js"></script>
+
+						<!-- The core Firebase JS SDK is always required and must be listed first -->
+						<script src="/__/firebase/6.3.4/firebase-app.js"></script>
+
+						<!-- TODO: Add SDKs for Firebase products that you want to use
+						     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+						<!-- Initialize Firebase -->
+						<script src="/__/firebase/init.js"></script>
+			     </body>
+			</html>

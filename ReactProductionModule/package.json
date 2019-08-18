@@ -1,0 +1,45 @@
+{
+  "name": "ReactProductionModule",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "unknown",
+  "private": true,
+  "proxy": "http://localhost:3001",
+  "scripts": {
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
+    "dev-server": "webpack-dev-server"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "babel-cli": "6.24.1",
+    "babel-core": "6.25.0",
+    "babel-loader": "7.1.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1",
+    "cors": "^2.8.5",
+    "css-loader": "0.28.4",
+    "dotenv": "^8.0.0",
+    "express": "4.17.1",
+    "extract-text-webpack-plugin": "3.0.0",
+    "firebase": "^6.2.2",
+    "firebase-admin": "^8.3.0",
+    "firebase-functions": "^3.2.0",
+    "firebase-tools": "^7.2.1",
+    "node-sass": "4.5.3",
+    "nodemailer": "^6.3.0",
+    "normalize.css": "8.0.1",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "5.0.1",
+    "redux": "^4.0.1",
+    "sass-loader": "6.0.6",
+    "style-loader": "0.18.2",
+    "webpack": "3.1.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.5.1"
+  }
+}
